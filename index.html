@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+    <link rel="stylesheet" href="assets/CSS/global7.css">
+    <link rel="stylesheet" href="assets/CSS/local7.css">
+</head>
+
+<body>
+    <script>
+        let Temperature = Number(prompt("Key in today's temperature in celsius, please! (For example : 7)"));
+        switch (true) {
+            case (-50 <= Temperature && Temperature <= 0):
+                console.log('Freezing!');
+                document.write('Freezing!🥶');
+                break;
+            case (0 < Temperature && Temperature <= 10):
+                console.log('Cold!');
+                document.write('Cold!❄️');
+                break;
+            case (Temperature > 10 && Temperature <= 15):
+                console.log('Cool!');
+                document.write('Cool!🆒');
+                break;
+            case (Temperature > 15 && Temperature <= 25):
+                console.log('Warm!');
+                document.write('Warm!🪭');
+                break;
+            case (25 < Temperature && Temperature <= 60):
+                console.log('Hot!');
+                document.write('Hot!🥵');
+                break;
+            default:
+                console.log('Adam Bash!');
+                document.write('Please enter a valid temperature!😊');
+                break;
+
+        }
+    </script>
+</body>
+
+</html>
